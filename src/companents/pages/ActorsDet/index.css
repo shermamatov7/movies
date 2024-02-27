@@ -1,0 +1,25 @@
+.actordet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.actors3 h3 {
+    color: hotpink;
+    margin: 30px;
+}
+
+.actors3 h1 {
+    font-size: 36px;
+    font-weight: 1200;
+    margin: 30px;
+}
+
+.actors3 h2 {
+    margin: 30px;
+    color: rgb(7, 17, 9);
+}
+
+.actordet img {
+    border-radius: 20px;
+}

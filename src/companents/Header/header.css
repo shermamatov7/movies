@@ -29,7 +29,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 18px;
+    margin-top: -6px;
 }
 
 .header a {
@@ -59,4 +59,10 @@ header {
 .header h1 {
     color: aliceblue;
     width: 230px;
+}
+
+header .icon {
+    width: 35px;
+    height: 35px;
+    color: rgb(28, 86, 86);
 }

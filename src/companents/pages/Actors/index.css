@@ -1,0 +1,45 @@
+.block1 img {
+    border-radius: 20px;
+    margin: 10px 20px;
+}
+
+/* .block1 { */
+/* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    overflow: scroll;
+    color: white;
+    font-size: 25px;
+    font-weight: 549;
+    background: rgb(14, 66, 69);
+    padding-top: 20px;
+    border-radius: 20px 0 0 20px;
+    height: 320px;
+} */
+
+
+.wrapper {
+    color: black;
+    font-size: 25px;
+    font-weight: 800;
+    margin: 20px 0;
+}
+
+
+.actors-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: scroll;
+    gap: 20px;
+    background-color: rgb(8, 51, 51);
+}
+
+.actors-list img {
+    border-radius: 20px;
+}
+
+.actors-list::-webkit-scrollbar {
+    display: none;
+}

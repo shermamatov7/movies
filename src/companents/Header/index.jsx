@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './header.css'
 import { NavLink, useNavigate } from 'react-router-dom';
+import { CgDarkMode } from "react-icons/cg";
 
 
-const Header = ({ setValue }) => {
+
+const Header = ({ setValue, state, setState }) => {
     const nav = useNavigate()
     function navigate() {
         nav(`/search`)
@@ -17,6 +19,7 @@ const Header = ({ setValue }) => {
                         <NavLink to={'/'}>Home</NavLink>
                         <NavLink to={'/popular'}>Popular</NavLink>
                         <NavLink to={'/top'}>Top rated</NavLink>
+
                     </nav>
                     <div className="header-work">
                         <input onChange={(event) => {
@@ -26,6 +29,10 @@ const Header = ({ setValue }) => {
                             navigate()
                         }}>Search</button>
                     </div>
+                    <CgDarkMode
+                        className='icon' onClick={() => {
+                            setState(!state)
+                        }} />
                 </div>
             </div>
         </header>

@@ -100,3 +100,56 @@ h2 {
 .icon a {
     color: wheat;
 }
+
+.modal {
+    display: none;
+    position: relative;
+}
+
+.modalactive {
+    position: absolute;
+    top: 250px;
+    left: 500px;
+    z-index: 100;
+    display: block;
+    width: 490px;
+    height: 440px;
+    background-color: rgb(197, 190, 190);
+}
+
+.modalactive img {
+    border-radius: 19px;
+    width: 270px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+.modalactive h2 {
+    position: absolute;
+    left: 340px;
+    bottom: 400px;
+}
+
+.modalactive button {
+    position: absolute;
+    left: 475px;
+    top: 420px;
+}
+
+.modal {
+    height: 100vh;
+    width: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal__content {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: wheat;
+    height: 200px;
+    width: 200px;
+}

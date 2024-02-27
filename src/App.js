@@ -1,31 +1,33 @@
+import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import './App.css';
 import Header from './companents/Header';
 import Home from './companents/pages/Home/index.jsx';
 import Popular from './companents/pages/Popular/popular';
-import MovieSearch from './companents/pages/MovieSearch/index.jsx';
-import { useState } from 'react';
-import MovieCard from './companents/pages/MovieCard/index.jsx';
 import Toprated from './companents/pages/Toprated/index.jsx'
 import MovieDetails from './companents/pages/MovieDetails/index.jsx';
+import Actors from './companents/pages/Actors/index.jsx';
+import ActorsDet from './companents/pages/ActorsDet/index.jsx';
+import './App.css';
 
 function App() {
   const [value, setValue] = useState('');
+  const [state, setState] = useState(false)
+
+
   return (
-    <div className="App">
-      <Header setValue={setValue} />
+    <div style={{ background: state ? "white" : "green" }} className="App">
+      <Header setValue={setValue} state={state} setState={setState} />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/popular' element={<Popular />} />
-        <Route path='/search' element={<MovieSearch />} />
-        <Route path='/movie' element={<MovieCard />} />
         <Route path='/top' element={<Toprated />} />
         <Route path='/movieDetails/:bayastan' element={<MovieDetails />} />
+        <Route path='/actors' element={<Actors />} />
+        <Route path='/actorsDetails/:movieId' element={<ActorsDet />}/>
       </Routes>
+
     </div>
   );
 }
 
 export default App;
-
-
