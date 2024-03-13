@@ -124,6 +124,7 @@ const MovieDetails = () => {
             </div >
             <Actors actors={actors} />
             <MovieVideos kinoId={bayastan} />
+            
         </>
     );
 };

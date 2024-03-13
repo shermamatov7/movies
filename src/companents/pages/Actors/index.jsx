@@ -37,15 +37,23 @@ const Actors = ({ actors }) => {
                                             src={`https://image.tmdb.org/t/p/w185${actor.profile_path}`}
                                             alt={actor}
                                         />
-                                        <p>{actor.name}</p>
+
+                                        <p>{actor.name}
+                                        </p>
+
                                     </Link>
+                             
                                 </div>
+
                             ))
                         ) : (
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore perspiciatis molestias nobis exercitationem cumque officiis, voluptatem, aliquam in repellendus illum, impedit unde recusandae ipsum. Porro reiciendis fugiat sed possimus ipsa?</p>
                         )}
+
                     </div>
+
                 </div>
+
             </div>
 
             {selectedActor && (

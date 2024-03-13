@@ -8,6 +8,7 @@ import MovieDetails from './companents/pages/MovieDetails/index.jsx';
 import Actors from './companents/pages/Actors/index.jsx';
 import ActorsDet from './companents/pages/ActorsDet/index.jsx';
 import './App.css';
+import Videoo from './companents/pages/Videoo/index.jsx';
 
 function App() {
   const [value, setValue] = useState('');
@@ -23,7 +24,7 @@ function App() {
         <Route path='/top' element={<Toprated />} />
         <Route path='/movieDetails/:bayastan' element={<MovieDetails />} />
         <Route path='/actors' element={<Actors />} />
-        <Route path='/actorsDetails/:movieId' element={<ActorsDet />}/>
+        <Route path='/actorsDetails/:movieId' element={<ActorsDet />} />
       </Routes>
 
     </div>

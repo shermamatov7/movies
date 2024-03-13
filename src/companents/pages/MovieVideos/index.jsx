@@ -28,7 +28,7 @@ const MovieVideos = ({ kinoId }) => {
     };
 
     const video = () => {
-        setBtns(0);
+        setBtns(2);
     };
     return (
         <div className='videos'>
